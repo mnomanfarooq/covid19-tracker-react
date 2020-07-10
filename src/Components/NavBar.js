@@ -34,7 +34,7 @@ export default function NavBar() {
           <Typography className={classes.title} variant="h6" noWrap>
             Covid19-Tracker by M. Noman Farooq
           </Typography>
-            <img src={Logo} width={35} height={35}/>
+            <img src={Logo} width={35} height={35} alt='COVID19'/>
         </Toolbar>
       </AppBar>
 
