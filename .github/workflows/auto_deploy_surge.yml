@@ -32,7 +32,7 @@ jobs:
         cmd: install # will run `yarn install` command
 
     - name: Add React Number Format
-      run: yarn add react-number-format
+      run: npm install react-number-format
       
     - name: Build React App
       run: yarn build
