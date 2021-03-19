@@ -43,7 +43,7 @@ export default function GlobalStats() {
     useEffect(() => {
         async function getData() {
             setDataLoad(true);
-            const response = await fetch("https://api.thevirustracker.com/free-api?global=stats");
+            const response = await fetch("https://api.covid19api.com/");
             let data = await response.json();
             delete data.results[0].source;
             setGlobalData(data.results[0]);
@@ -52,7 +52,7 @@ export default function GlobalStats() {
         getData();
     }, [])
 
-
+//https://api.thevirustracker.com/free-api?global=stats
     const dataPieChart = {
         labels: [
             'Active',
